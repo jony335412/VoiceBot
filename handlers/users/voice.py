@@ -36,6 +36,7 @@ async def voice_message_handler(message: Message):
         audio_data = r.record(source)
         text = r.recognize_google(audio_data, language="ru-RU")
     await message.reply(text)
+    await message.answer('prinver')
 
     
 
